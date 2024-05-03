@@ -1,0 +1,261 @@
+:root {
+  --color-border: rgb(104, 104, 104);
+  --color-primary: rgb(206, 255, 72);
+  --color-secondary: rgb(230, 255, 160);
+  --padding-size: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(54, 54, 54);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1400px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 0 0 10px 1px rgb(36, 36, 36);
+}
+
+.header {
+  display: flex;
+  height: 50px;
+  padding: 0 var(--padding-size);
+  justify-content: center;
+  align-items: center;
+  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header nav {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  width: 8rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 0rem 2rem;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  line-height: 50px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: #555555;
+  border-bottom: 1px solid;
+}
+
+.main {
+  padding: 4rem var(--padding-size) 0;
+}
+
+.main h1 {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.filters {
+  display: flex;
+  margin-top: 4rem;
+  height: 50px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+}
+
+.input {
+  display: flex;
+  width: 180px;
+  background-color: rgba(255, 255, 255, 0.082);
+  border: 1px solid var(--color-secondary);
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+.input:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.116);
+  border-color: white;
+}
+
+.input:hover > .arrow {
+  color: white;
+  border-color: white;
+}
+
+.input p {
+  height: 4rem;
+  flex-grow: 1;
+  font-size: 1.2rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.arrow {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid var(--color-secondary);
+}
+
+button.reload {
+  display: flex;
+  height: 4rem;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(65, 65, 65);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button.reload:hover {
+  background-color: var(--color-secondary);
+}
+
+.section-header {
+  display: flex;
+  margin: 4rem auto 0 auto;
+  width: 80%;
+  justify-content: center;
+  gap: 8rem;
+  color: white;
+}
+
+.teams-list {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
+  border-spacing: 0;
+  box-shadow: 0 0 10px 0px rgb(36, 36, 36);
+}
+
+.teams-list th {
+  height: 2rem;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  background-color: rgb(206, 255, 72);
+}
+
+.league-member {
+  height: 3rem;
+  color: rgb(228, 228, 228);
+  border-bottom: 1px solid gray;
+}
+
+td {
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+th {
+  border-bottom: 1px solid rgba(73, 73, 73, 0.178);
+  border-right: 1px solid rgba(73, 73, 73, 0.178);
+}
+
+tr td:last-of-type,
+tr th:last-of-type {
+  border-right: none;
+}
+
+tr:last-of-type td,
+tr:last-of-type th,
+tr:first-of-type th {
+  border-bottom: none;
+}
+
+tr:last-of-type th {
+  border-top: 1px solid rgba(73, 73, 73, 0.075);
+  background-color: rgb(191, 236, 67);
+}
+
+.league-member td:nth-child(2) {
+  border-right: none;
+}
+
+.league-member:nth-child(2n-1) {
+  background-color: rgb(71, 71, 71);
+}
+
+.league-member:nth-child(2n) {
+  background-color: rgb(97, 97, 97);
+}
+
+.league-member img {
+  height: 2rem;
+  width: 2rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.league-member td {
+  min-width: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.league-member:hover {
+  background-color: rgb(121, 121, 121);
+}
+
+.league-member td:nth-child(3) {
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  margin: 1rem auto 0;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-primary);
+}
+
+.footer a {
+  color: var(--color-primary);
+  font-size: 2rem;
+}
+
+.footer a:hover {
+  color: var(--color-secondary);
+}

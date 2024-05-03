@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sport App</title>
+    <meta name="description" content="Sport" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/bed62f5b0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav>
+          <img class="logo" alt="site-logo" />
+          <ul class="menu">
+            <li><a href="#">LINK</a></li>
+            <li><a href="#">LINK</a></li>
+            <li><a href="#">LINK</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main">
+        <h1>International volleyball leagues standings</h1>
+        <div class="filters">
+          <div id="input-country" class="input">
+            <p>Country</p>
+            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+          </div>
+          <div id="input-league" class="input">
+            <p>League</p>
+            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+          </div>
+          <div id="input-season" class="input">
+            <p>Season</p>
+            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+          </div>
+          <button class="reload">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+        <section class="teams-section">
+          <p class="section-header">
+            <span class="country">Country</span>
+            <span class="league">Name <img src="" alt="league-logo" /></span>
+            <span class="season">Season</span>
+          </p>
+          <table class="teams-list">
+            <thead>
+              <tr>
+                <th rowspan="2">#</th>
+                <th rowspan="2" colspan="2">Team</th>
+                <th rowspan="2">Pts</th>
+                <th colspan="3">Games</th>
+                <th colspan="2">Sets</th>
+              </tr>
+              <tr>
+                <th>Played</th>
+                <th>Won</th>
+                <th>Lost</th>
+                <th>Won</th>
+                <th>Lost</th>
+              </tr>
+            </thead>
+            <tbody class="teams-table-body"></tbody>
+          </table>
+        </section>
+      </main>
+      <footer class="footer">
+        <p>Copyright &copy; 2024 Adam Czerniak</p>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/script.js" type="module"></script>
+  </body>
+</html>
