@@ -3,7 +3,6 @@ import { LEAGUES } from "./utils.js";
 
 async function fetchTeams(league, season) {
   const teams = await fetchingTeams(league, season);
-  console.log(teams);
 
   const teamsList = document.querySelector(".teams-table-body");
   teamsList.innerHTML = "";
@@ -132,8 +131,6 @@ function onChangeSelect() {
     const option = document.createElement("option");
     option.setAttribute("value", league.id);
     option.innerHTML = league.name;
-
-    console.log(option);
 
     secondSelect.appendChild(option);
   });
