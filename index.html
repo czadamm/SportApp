@@ -17,31 +17,42 @@
         <nav>
           <img class="logo" alt="site-logo" />
           <ul class="menu">
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
+            <li><a href="#">Volleyball</a></li>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
           </ul>
         </nav>
       </header>
       <main class="main">
-        <h1>International volleyball leagues standings</h1>
-        <div class="filters">
-          <div id="input-country" class="input">
-            <p>Country</p>
-            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+        <h1>Volleyball standings</h1>
+        <form id="filters-form" class="filters">
+          <div id="custom-country-select" class="input">
+            <select name="country-select" id="country-select">
+              <option value="0">Country</option>
+              <option value="34">Poland</option>
+              <option value="25">Italy</option>
+              <option value="18">France</option>
+              <option value="49">Turkey</option>
+            </select>
           </div>
-          <div id="input-league" class="input">
-            <p>League</p>
-            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+          <div id="custom-league-select" class="input">
+            <select name="league-select" id="league-select">
+              <option value="0">League</option>
+            </select>
           </div>
-          <div id="input-season" class="input">
-            <p>Season</p>
-            <div class="arrow"><i class="fa-solid fa-caret-down"></i></div>
+          <div id="custom-season-select" class="input">
+            <select name="season-select" id="season-select">
+              <option value="0">Season</option>
+              <option value="2023">2023-2024</option>
+              <option value="2022">2022-2023</option>
+              <option value="2021">2021-2022</option>
+            </select>
           </div>
           <button class="reload">
             <i class="fa-solid fa-arrows-rotate"></i>
           </button>
-        </div>
+          <p id="error-message">Select Country, League and Season</p>
+        </form>
         <section class="teams-section">
           <p class="section-header">
             <span class="country">Country</span>

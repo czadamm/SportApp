@@ -1,0 +1,17 @@
+export const LEAGUES = [
+  { country: 34, id: 113, name: "PlusLiga [M]" },
+  { country: 34, id: 118, name: "Tauron 1. Liga [M]" },
+  { country: 34, id: 120, name: "Tauron Liga [W]" },
+  { country: 34, id: 119, name: "1. Liga [W]" },
+  { country: 25, id: 97, name: "SuperLega [M]" },
+  { country: 25, id: 88, name: "Serie A2 [M]" },
+  { country: 25, id: 89, name: "Serie A1 [W]" },
+  { country: 25, id: 90, name: "Serie A2 [W]" },
+  { country: 18, id: 63, name: "Ligue A [M]" },
+  { country: 18, id: 64, name: "Ligue B [M]" },
+  { country: 18, id: 65, name: "Ligue A [W]" },
+  { country: 49, id: 172, name: "Efeler Ligi [M]" },
+  { country: 49, id: 173, name: "1. Ligi [M]" },
+  { country: 49, id: 174, name: "Sultanlar Ligi [W]" },
+  { country: 49, id: 175, name: "1. Ligi [W]" },
+];
